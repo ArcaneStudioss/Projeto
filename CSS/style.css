@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    height: 100%;
+    width: 100vw;
+
+    font-family: 'Roboto', sans-serif;
+
+    background-color: var(--backgrond);
+
+    overflow-x: hidden;
+}
+
+:root {
+    --white: rgb(0, 83, 0);
+    --backgrond: #ffffff20;
+    
+    --theme: rgb(0, 128, 0);
+    --titulos: rgb(0, 130, 0);
+    --themeHover: rgb(2, 150, 2);
+    --themeDark: rgb(0, 74, 0);
+    --themeLightC: rgb(0, 112, 0);
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(0, 112, 0);      /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--themeDark);
+    border: 3px solid rgb(0, 128, 0); 
+    border-radius: 20px;
+}
+
+h5 {
+    color: rgb(0, 62, 0);
+}
+
+/* roll */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20%;
+    cursor: default;
+}
+
+/* holder */
+
+.menuStatic {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+
+    position: fixed;
+
+    /* padding: 18px 35pt; */
+    height: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    background-color: var(--theme);
+    background-image: linear-gradient(90deg, transparent, transparent, var(--themeLightC));
+    color: white;
+
+    font-weight: 700;
+}
+
+.titulomenu {
+    display: flex;
+    align-items: center;
+}
+
+.partes {
+    display: flex;
+    flex-direction: rows;
+}
+
+.partes h4 {
+    color: var(--white);
+}
+
+#menus {
+    height: 100%;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+
+    cursor: pointer;
+}
+
+#menus:hover {
+    background-color: var(--themeHover);
+}
+
+/* Conteúdo do site */
+
+section {
+    width: 100%;
+}
+
+#conteudo {
+    width: 100vw;
+    padding-top: 60px;
+    color: var(--white);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container hr {
+    margin-top: 10px;
+    width: 20%;
+    border-color: var(--theme);
+}
+
+/* Apresentação */
+
+.tit {
+    padding-top: 30px;
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.textoapre {
+    width: 350px;
+    text-align: justify;
+}
+
+.textoapre h2 {
+    color: var(--titulos);
+    margin-bottom: 10px;
+}
+
+#image {
+    width: 600px;
+}
+
+/* Titulos */
+
+.Titulos {
+    padding-top: 50px;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 800px;
+    margin-bottom: 50px;
+}
+
+.Titulos h2 {
+    padding-bottom: 20px;
+    color: var(--theme);
+}
+
+.Titulos h3 {
+    font-size: 20px;
+    color: var(--theme);
+}
+
+.Titulos b {
+    font-size: 17px;
+    color: var(--themeLightC);
+}
+
+.container hr {
+    margin-top: 10px;
+    width: 20%;
+    border-color: var(--theme);
+}
+
+/* Sobre nós */
+
+.sobre {
+    width: 100%;
+    padding: 30px 200px;
+    color: white;
+    background-color: var(--theme);
+    background-image: linear-gradient(90deg, transparent, transparent, var(--themeLightC));
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.infos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sobre h1 {
+    font-size: 23pt;
+    color: rgb(0, 98, 0);
+    padding-bottom: 20px;
+}
+
+.sobre p {
+    font-weight: 500;
+    font-size: 13pt;
+}
+
+.sobreAlunos {
+    padding-right: 100px;
+}
+
+.informacoes {
+    padding-left: 100px;
+}
+
+.copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 98, 0);
+    cursor: default;
+}
+
+.imagensgal {
+    border: 5px solid var(--theme);
+}
